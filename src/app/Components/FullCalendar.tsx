@@ -26,7 +26,7 @@ const FullCalendarComponent = () => {
   const [events, setEvents] = useState<Array<Event>>([])
 
   useEffect(() => {
-    const ws = new WebSocket('http://localhost:3001');
+    const ws = new WebSocket('wss://wsserver-production-afea.up.railway.app');
 
     ws.onopen = () =>
 
